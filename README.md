@@ -1,4 +1,4 @@
-Ultra Low-Latency Market Making Engine
+# Ultra Low-Latency Market Making Engine
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
 ![Async](https://img.shields.io/badge/Concurrency-asyncio-informational)
 ![Latency](https://img.shields.io/badge/Latency-Nanosecond_Resolution-green)
@@ -68,7 +68,7 @@ LatencyProfiler  (nanosecond hot-path timing)
 dashboard.py  (P&L, attribution, inventory, spread, rolling Sharpe)
 ```
 ---
-Key Models & Formulas
+## Key Models & Formulas
 Concept	Formula
 
 Reservation price	`r = s − q·γ·σ²·(T−t)`
@@ -80,9 +80,9 @@ Micro-price (fair value)	`mp = (bid·AskVol + ask·BidVol) / (AskVol + BidVol)`
 Inventory skew	`bid -= inv_frac·δ·0.4`, `ask -= inv_frac·δ·0.4`
 
 ---
-Parameters (config.py)
+## Parameters (config.py)
 
-Parameter	Default	Description
+### Parameter	Default	Description
 
 `GAMMA`	0.08	Risk-aversion coefficient
 
@@ -97,7 +97,7 @@ Parameter	Default	Description
 `INFORMED_FRACTION`	0.15	Fraction of order flow that is adverse
 
 ---
-Dashboard Output
+## Dashboard Output
 
 `mm_dashboard.png` — 6-panel dark-theme dashboard:
 
@@ -114,7 +114,7 @@ Latency profile: mean vs P99 per operation
 Rolling Sharpe ratio (500-tick window)
 
 ---
-References
+## References
 
 Avellaneda & Stoikov (2008). High-frequency trading in a limit order book. Quantitative Finance, 8(3).
 
